@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    >
+
+    <TextView
+        android:text="repo name"
+        android:id="@+id/textViewRepoName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:text="Star"
+        android:layout_toLeftOf="@id/textViewRepoName"
+        android:id="@+id/textViewStar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textSize="24sp"
+        />
+
+    <TextView
+        android:text="Owner"
+        android:id="@+id/textViewOwner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_below="@id/textViewRepoName"/>
+
+    <TextView
+        android:text="Description"
+        android:id="@+id/textViewDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_below="@id/textViewOwner"
+        />
+
+</RelativeLayout>
